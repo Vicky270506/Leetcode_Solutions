@@ -38,7 +38,6 @@ class Solution {
         long s = findMaxValue(root.left, t) + root.val + findMaxValue(root.right, t);
         long othersum = t - s;
         c = Math.max(c, s*othersum);
-        System.out.println(c);
         return s;
     }
 }
