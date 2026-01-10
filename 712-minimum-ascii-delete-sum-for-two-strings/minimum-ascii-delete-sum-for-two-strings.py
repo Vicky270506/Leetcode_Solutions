@@ -26,8 +26,6 @@ class Solution:
 
             best = min(best, dp(index1, index2 + 1) + ord(s2[index2]))
 
-            print(best)
-
             return best
         
         return dp(0,0)
