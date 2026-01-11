@@ -50,7 +50,6 @@ class Solution {
                     {
                         ans*=10;
                         ans+=(v-48);
-                        System.out.println(ans);
                     }
                 }
             }
