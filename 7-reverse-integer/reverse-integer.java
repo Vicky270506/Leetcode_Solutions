@@ -1,30 +1,10 @@
 class Solution {
-    int min = Integer.MIN_VALUE;
-    int max = Integer.MAX_VALUE;
     public int reverse(int x) {
-        boolean sign = true;
-        if(x<0)
-        {
-            sign = false;
-            x = -x;
-        }
-        int r=0;
-        while(x>0)
-        {
-            if(r > max/10)
-            {
-                return 0;
-            }
-            r = (r*10) + (x%10);
-            x/=10;
-        }
-        if(sign)
-        {
-            return r;
-        }
-        else
-        {
-            return -r;
-        }
+        String reversed = new StringBuilder().append(Math.abs(x)).reverse().toString();
+try {
+    return (x < 0) ? Integer.parseInt(reversed) * -1 : Integer.parseInt(reversed);
+} catch (NumberFormatException e) {
+    return 0;
+}
     }
 }
