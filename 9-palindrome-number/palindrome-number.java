@@ -17,14 +17,7 @@ class Solution {
                 rev = (rev*10) + r;
                 x/=10;
             }
-            if(n==rev)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return n==rev;
         }
     }
 }
