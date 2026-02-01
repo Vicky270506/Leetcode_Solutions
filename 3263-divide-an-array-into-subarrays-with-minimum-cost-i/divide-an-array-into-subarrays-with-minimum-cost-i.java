@@ -4,7 +4,7 @@ class Solution {
         int num2 = Integer.MAX_VALUE;
         for(int i=1;i<nums.length;i++)
         {
-            if(nums[i] < num1 && nums[i] < num2)
+            if(nums[i] < num1)
             {
                 num2 = num1;
                 num1 = nums[i];
