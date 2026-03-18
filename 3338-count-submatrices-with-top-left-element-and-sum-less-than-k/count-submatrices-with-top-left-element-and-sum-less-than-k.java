@@ -11,10 +11,9 @@ class Solution {
             for (int j = 0; j < m; j++) {
                 cols[j] += grid[i][j];
                 rows += cols[j];
-                if (rows > k) {
-                    break;
+                if (rows <= k) {
+                    res++;
                 }
-                res++;
             }
         }
 
