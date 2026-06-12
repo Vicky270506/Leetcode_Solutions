@@ -1,15 +1,25 @@
 class Solution {
     public int removeDuplicates(int[] nums) {
-        int k=1;
-        int prev=nums[0];
-        for(int i=1;i<nums.length;++i)
+        int p = 0;
+        for(int i=1; i<nums.length;i++)
         {
-            if(nums[i]!=prev)
+            if(nums[i] == nums[i-1])
             {
-                nums[k++] = nums[i];
-                prev = nums[i];
+                continue;
+            }
+            else
+            {
+                swap(nums, i-1, p);
+                p++;
             }
         }
-        return k;
+        swap(nums, p, nums.length-1);
+        return p+1;
+    }
+    private void swap(int[] nums, int a, int p)
+    {
+        int t = nums[a];
+        nums[a] = nums[p];
+        nums[p] = t;
     }
 }
