@@ -11,6 +11,7 @@ class Solution {
         {
             if(nums[i] == 0 && prev == 0)
             {
+                System.gc();
                 return false;
             }
             prev = prev < nums[i] ? nums[i] : prev;
