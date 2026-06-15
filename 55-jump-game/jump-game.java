@@ -13,10 +13,7 @@ class Solution {
             {
                 return false;
             }
-            if(i + nums[i] >= n)
-            {
-                return true;
-            }
+            
             prev = prev < nums[i] ? nums[i] : prev;
             prev--;
         }
