@@ -13,10 +13,10 @@ class Solution {
             {
                 return false;
             }
-            
             prev = prev < nums[i] ? nums[i] : prev;
             prev--;
         }
+        System.gc();
         return true;
     }
 }
