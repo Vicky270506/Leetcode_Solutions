@@ -60,5 +60,6 @@ class Solution {
                 matrix[c][j] = 0;
             }
         }
+        System.gc();
     }
 }
