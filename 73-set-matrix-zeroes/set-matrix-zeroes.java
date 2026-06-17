@@ -35,7 +35,6 @@ class Solution {
                 }
             }        
         }
-        System.out.println(Arrays.deepToString(matrix));
         if(matrix[0][0] == 0)
         {
             for(int i = 1; i<matrix.length;i++)
