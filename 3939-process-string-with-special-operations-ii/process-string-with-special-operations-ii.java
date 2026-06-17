@@ -21,7 +21,6 @@ class Solution {
                     break;
             }
         }
-        System.out.print(length);
         if(k+1 > length)
         {
             return '.';
