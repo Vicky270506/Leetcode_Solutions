@@ -19,6 +19,7 @@ class Solution {
                             left++;
                             right--;
                         }
+                        System.gc();
                         return;
                     }
                     
@@ -27,6 +28,7 @@ class Solution {
         }
         if(pivot == -1)
         {
+            System.gc();
             Arrays.sort(nums);
         }
     }
