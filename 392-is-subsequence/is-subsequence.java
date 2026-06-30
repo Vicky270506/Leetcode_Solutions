@@ -7,8 +7,9 @@ class Solution {
         int a = 0;
         
 
-        for(char c: t.toCharArray())
+        for(int i=0;i<t.length();i++)
         {
+            char c = t.charAt(i);
             if(c == s.charAt(a))
             {
                 a++;
