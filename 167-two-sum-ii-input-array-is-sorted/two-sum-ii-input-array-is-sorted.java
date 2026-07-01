@@ -11,6 +11,7 @@ class Solution {
                 int mid = (int)((left + right)/2);
                 if(b == nums[mid])
                 {
+                    System.gc();
                     return new int[]{i+1,mid+1};
                 }
                 else if(nums[mid] > b)
