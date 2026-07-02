@@ -8,16 +8,30 @@ class Solution {
     }));
     }
     public boolean isPalindrome(String s) {
-        
-        s = s.toLowerCase().replaceAll("[^a-z0-9]", "");
-        int i = 0, j = s.length() - 1;
-        while (i < j) {
-            if (s.charAt(i) != s.charAt(j)) {
-                return false;
+        StringBuilder str = new StringBuilder();
+        for(char c: s.toCharArray())
+        {
+            if(Character.isAlphabetic(c) || Character.isDigit(c))
+            {
+                str.append(c);
             }
-            i++;
-            j--;
         }
-        return true;
+        if(str.length()<2)
+        {
+            return true;
+        }
+        else{
+            String a = new String(str).toLowerCase();
+
+            int left = 0, right = a.length()-1;
+            while(left <= right)
+            {
+                if(a.charAt(left++) != a.charAt(right--))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
     }
 }
