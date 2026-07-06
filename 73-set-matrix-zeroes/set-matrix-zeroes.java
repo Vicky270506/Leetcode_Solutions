@@ -24,7 +24,6 @@ class Solution {
                 }
             }
         }
-        System.out.println(Arrays.deepToString(matrix));
         for(int i=1;i<matrix.length;i++)
         {
             for(int j=1;j<matrix[0].length;j++)
@@ -60,6 +59,5 @@ class Solution {
                 matrix[c][j] = 0;
             }
         }
-        System.gc();
     }
 }
