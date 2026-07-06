@@ -5,7 +5,6 @@ class Solution {
             return 0;
         }
         Arrays.sort(nums);
-        System.out.print(Arrays.toString(nums));
         int ans = 0, cm = 1;
         for(int i=1;i<nums.length;i++)
         {
