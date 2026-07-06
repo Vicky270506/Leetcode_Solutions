@@ -21,7 +21,6 @@ class Solution {
                     flag = true;
                 }
             }
-            System.out.println(sb);
         }
         if(!sb.toString().equals("") && !sb.toString().equals(" "))
         {
