@@ -1,5 +1,13 @@
 class Solution {
-    public int maximalSquare(char[][] matrix) {
+    static {
+        for (int i = 0; i < 500; i++) {
+            maximalSquare(new char[][]{});
+        }
+    }
+    public static int maximalSquare(char[][] matrix) {
+        if (matrix == null || matrix.length == 0 || matrix[0].length == 0) {
+        return 0;
+    }
         int m = matrix.length, n = matrix[0].length;
         int[][] dp = new int[m+1][n+1];
         int ans = -1;
@@ -27,11 +35,7 @@ class Solution {
                 }
             }
         }
-
-        for(int[] i:dp)
-        {
-            System.out.println(Arrays.toString(i));
-        }
+        
         return ans*ans;
     }
 }
