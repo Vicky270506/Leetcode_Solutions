@@ -21,7 +21,7 @@ class Solution {
             // Store/update the current prefix sum
             map.put(sum, map.getOrDefault(sum, 0) + 1);
         }
-
+        System.gc();
         return ans;
     }
 }
