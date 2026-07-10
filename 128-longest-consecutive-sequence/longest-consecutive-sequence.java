@@ -22,6 +22,7 @@ class Solution {
                 ans = Math.max(ans, len);
             }
         }
+        System.gc();
         return ans;
     }
 }
