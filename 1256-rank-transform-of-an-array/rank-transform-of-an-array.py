@@ -10,9 +10,7 @@ class Solution:
                 d[j] = i
                 i += 1
 
-        print(d)
         l = []
-        print(arr)
         for i in arr:
             l.append(d[i])
 
