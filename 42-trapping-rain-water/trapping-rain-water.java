@@ -13,8 +13,8 @@ class Solution {
         {
             suffix[i] = Math.max(suffix[i+1],height[i]);
         }
-        System.out.println(Arrays.toString(prefix));
-        System.out.println(Arrays.toString(suffix));
+        //System.out.println(Arrays.toString(prefix));
+        //System.out.println(Arrays.toString(suffix));
         int total = 0;
         for(int i=0; i<n;i++)
         {
